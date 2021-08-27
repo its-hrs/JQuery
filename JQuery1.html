@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh_JQuery1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+      .container input {
+        width: 35%;
+        background-color: rgb(63, 40, 40);
+        color: white;
+        font-size: 1.2em;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 20px;
+        margin-left: 9%;
+        cursor: pointer;
+        position: static;
+      }
+
+      #p1 {
+        width: 75%;
+        height: 50vh;
+        background-color: rgb(37, 27, 27);
+        border-radius: 8px;
+        padding: 50px;
+        margin: auto;
+        color: whitesmoke;
+        font-family: Verdana;
+        font-size: 1.5em;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#p1").fadeIn(2000);
+        });
+        $("#btn2").click(function () {
+          $("#p1").fadeOut(2000);
+        });
+      });
+    </script>
+
+    <h1 style="font-family: cursive; text-align: center">JQuery1 Fade-in & Fade-out</h1>
+    <p id="p1">
+      Illustration of Fade-In and Fade-Out using JQuery.<br /><br /> Lorem ipsum dolor sit
+      amet, consectetur adipisicing elit. Ea nam quas reprehenderit doloremque
+      maxime quam sunt eos ipsum? At maiores laboriosam magnam voluptatum, sint
+      id repellat delectus nisi eligendi velit vitae sed quod impedit aliquam
+      suscipit omnis voluptatibus ipsam non.
+    </p>
+    <div class="container">
+      <input type="button" name="fadein" id="btn1" value="Fade In" />
+      <input type="button" name="fadeout" id="btn2" value="Fade Out" />
+    </div>
+  </body>
+</html>
